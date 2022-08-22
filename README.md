@@ -1,1 +1,1 @@
-<a href="rafaelcipriano.github.io/ideal/index-z.html">Supermercado Ideal</a>
+<a href="https://github.com/RafaelCipriano/ideal/index-z.html">Supermercado Ideal</a>
