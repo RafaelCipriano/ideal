@@ -1,0 +1,271 @@
+/* ========== GLOBAL ========== */
+:root {
+    --global-source: Arial, Helvetica, sans-serif;
+    --ideal-blue: hsl(209, 100%, 33%);
+    --white: hsl(0, 0%, 100%);
+    --color-to-images: green;
+    --nav-height: 8rem;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font: 1.6rem var(--global-source);
+}
+
+div.wrapper {
+    max-width: 100rem;
+    margin-inline: auto;
+}
+
+hr {
+    border-block: .2rem solid orange;
+    margin-block: .2rem;
+}
+
+/* ========== nav#navigation ========== */
+nav#navigation {
+    min-width: 32rem;
+    height: var(--nav-height);
+    background: var(--ideal-blue);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+div.content-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+div.logo {
+    width: max(30rem);
+    height: var(--nav-height);
+    background: var(--color-to-images);
+}
+
+ul.navList {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+.navList a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navList a:hover {
+    color: orange;
+    transition: .3s;
+}
+
+/* ========== section#offers ========== */
+section#offers {
+    min-width: 32rem;
+    height: 90rem;
+    position: relative;
+}
+
+#offers::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to bottom, hsl(39, 100%, 73%), hsl(33, 100%, 50%));
+    width: 100%;
+    height: 40rem;
+}
+
+div.specialPromotions {
+    max-width: 100rem;
+    height: 40rem;
+    background: var(--color-to-images);
+    position: relative;
+    top: 1rem;
+}
+
+#offers h2 {
+    color: orange;
+    font-size: 3.2rem;
+    margin-block-start: 5rem;
+}
+
+div.weeklyOffers {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+div.card {
+    width: 30rem;
+    height: 36rem;
+    padding-top: 1.6rem;
+    text-align: center;
+    background: linear-gradient(to bottom, hsl(39, 100%, 73%), hsl(33, 100%, 50%));
+}
+
+.card div.itemImage {
+    width: 25rem;
+    height: 18rem;
+    background: var(--color-to-images);
+    margin-inline: auto;
+}
+
+.card div.itemName {
+    font-size: 3.2rem;
+    font-weight: bolder;
+    padding-block: 1.6rem;
+}
+
+.card div.itemPrice {
+    width: 25rem;
+    height: 14rem;
+    font-size: 12rem;
+    font-weight: bolder;
+    margin-inline: auto;
+    color: yellow;
+    background: darkred;
+    padding: .5rem;
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.500);
+    position: relative;
+}
+
+.card span.cents {
+    display: inline-block;
+    font-size: 7rem;
+    vertical-align: 3.5rem;
+}
+
+.card div.salesUnit {
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    font-weight: normal;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/* ========== section#ourHistory ========== */
+section#ourStory {
+    width: 100%;
+    height: 62rem;
+    margin-top: 5rem;
+    background-color: var(--ideal-blue);
+}
+
+#ourStory .wrapper h2 {
+    font-size: 3.2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    padding-block: 1.6rem;
+}
+
+div.historyImagesContent {
+    float: left;
+}
+
+div.imagesFromOurHistory {
+    width: 48rem;
+    display: flex;
+    gap: 4rem 2rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-block-end: 2rem;
+}
+
+.imagesFromOurHistory div.storyImage {
+    width: 20rem;
+    height: 19rem;
+    background: var(--color-to-images);
+}
+
+div.storyImageBig {
+    float: left;
+    width: 50rem;
+    height: 35rem;
+    margin: 0 0rem 2rem 0;
+    background: var(--color-to-images);
+}
+
+#ourStory p {
+    text-align: justify;
+    color: var(--white);
+    max-width: 95rem;
+    margin: auto;
+}
+
+/* ========== section#ownProduction ========== */
+section#ownProduction h2 {
+    color: orange;
+    font-size: 3.2rem;
+    font-weight: bolder;
+    padding-block: 3.2rem;
+}
+
+div.flexContent {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 6.6rem;
+}
+
+.flexContent div.bakery {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    width: 20rem;
+}
+
+.bakery div.bakeryItemImage {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 40rem;
+    background: var(--color-to-images);
+}
+
+.bakery h3 {
+    color: orange;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+/* ========== footer ========== */
+footer {
+    width: 100%;
+    height: 6rem;
+    background: var(--ideal-blue);
+    color: var(--white);
+}
+
+div.wrapper-footer {
+    max-width: 100rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+}
+
+footer address {
+    text-align: center;
+    font-style: normal;
+}
+
+div.logo-footer {
+    display: block;
+    width: 20rem;
+    height: 6rem;
+    background: var(--color-to-images);
+}
