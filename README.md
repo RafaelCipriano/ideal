@@ -1,2 +1,2 @@
-# ideal
+# Ideal
  Website for a market
